@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サイドパネルタイマー</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+
+<body>
+  <main class="container">
+    <div id="mode-switch">
+      <button id="countdown-btn" class="active">カウントダウン</button>
+      <button id="countup-btn">カウントアップ</button>
+    </div>
+    <div id="timer-setup">
+      <input type="number" id="hours" min="0" max="99" value="0">時
+      <input type="number" id="minutes" min="0" max="59" value="0">分
+      <input type="number" id="seconds" min="0" max="59" value="0">秒
+    </div>
+    <div id="timer-display">00:00</div>
+    <div id="controls">
+      <button id="start-btn">スタート</button>
+      <button id="pause-btn" disabled>一時停止</button>
+      <button id="resume-btn" disabled>再開</button>
+      <button id="reset-btn" disabled>リセット</button>
+    </div>
+  </main>
+  <script src="sidepanel.js"></script>
+</body>
+
+</html>
